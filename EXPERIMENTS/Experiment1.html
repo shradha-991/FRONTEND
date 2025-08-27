@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shradha Garg • Portfolio</title>
+
+   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: #1c1c1c;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #b0b0b0;   
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      gap: 2rem;
+    }
+    section {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #e6e9ef;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    section h2 {
+      font-size: 1.4rem;
+      color: #1c1c1c;
+      margin-bottom: 1rem;
+      border-left: 4px solid #b0b0b0;  
+      padding-left: 0.5rem;
+    }
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    figure img {
+      max-width: 160px;
+      border-radius: 50%;
+      border: 3px solid #98cae7; 
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+    figcaption {
+      margin-top: 0.7rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #1c1c1c;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background: #1c1c1c;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #b0b0b0;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shradha Garg</h1>
+    <p>Personal Portfolio</p>
+    <nav>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="Bio">
+      <h2>Bio</h2>
+      <figure>
+        <img src="profile1.jpg" alt="Portrait of Shradha Garg">
+        <figcaption>Shradha Garg</figcaption>
+      </figure>
+      <p>I am Shradha Garg, a Computer Science and Engineering student passionate about creating clean, user-friendly, and accessible web applications. My interests include frontend development, databases, and cybersecurity, where I enjoy learning by building practical projects. I am curious about solving real-world problems with technology and actively participate in hackathons to challenge myself and grow. Beyond coding, I value teamwork, creativity, and continuous learning.
+</p>
+    </section>
+
+    <section id="Education">
+      <h2>Education</h2>
+      <article>
+        <h3>B.Tech in Computer Science & Engineering</h3>
+        <p><strong>Institute:</strong> GLA</p>
+        <p><strong>Duration:</strong> 2025 - Present</p>
+        <p><strong>Details:</strong> Currently pursuing my B.Tech in CSE</p>
+      </article>
+    </section>
+
+    <section id="Skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML <progress value="85" max="100"></progress></li>
+        <li>CSS <progress value="65" max="100"></progress></li>
+        <li>C <progress value="75" max="100"></progress></li>
+        <li>Python <progress value="85" max="100"></progress></li>
+        <li>GUI Development <progress value="60" max="100"></progress></li>
+        <li>JavaScript <progress value="40" max="100"></progress></li>
+        <li>Artificial Intelligence <progress value="60" max="100"></progress></li>
+        <li>Problem Solving <progress value="85" max="100"></progress></li>
+        <li>Teamwork <progress value="75" max="100"></progress></li>
+        <li>Networking <progress value="70" max="100"></progress></li>
+      </ul>
+    </section>
+
+    <section id="Contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:shradhagarg0909@gmail.com">shradhagarg0909@gmail.com</a></p>
+      <p>Phone: 8791285126</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/shradha-garg-b752a8359" target="_blank">Shradha Garg</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <time id="2025"></time> Shradha Garg</p>
+  </footer>
+
+  <script>
+    document.getElementById('2025').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
