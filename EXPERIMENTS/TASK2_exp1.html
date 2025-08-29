@@ -1,100 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academic Timetable</title>
+   <title>Class Timetable</title>
   <style>
-    body {
-      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      min-height: 100vh;
-      background: #f4f6fb;
-      color: #222;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    table {
-      width: 100%;
-      max-width: 950px;
-      border-collapse: separate;
-      border-spacing: 0;
-      text-align: center;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-      overflow: hidden;
-      margin-top: 32px;
-      border: 1px solid #e3e7ee;
-      animation: fadeIn 0.8s;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    th, td {
-      border: 1px solid #e3e7ee;
-      padding: 13px 8px;
-      font-size: 1rem;
-      transition: background 0.2s;
-    }
-    thead th {
-      background: #2d3e50;
-      color: #fff;
-      font-size: 1.08rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      border: none;
-      box-shadow: none;
-      text-shadow: none;
-    }
-    tbody tr {
-      transition: background 0.2s;
-    }
-    tbody tr:hover {
-      background: #f6faff;
-    }
-    tfoot {
-      background-color: #f0f2f5;
-      font-style: italic;
-    }
-    .highlight {
-      background-color: #eafbe7;
-      font-weight: 600;
-      color: #176c2f;
-      border-radius: 6px;
-      border: 1.5px solid #b2f7b2;
-    }
-    h2 {
-      margin-top: 40px;
-      font-size: 2rem;
-      color: #2d3e50;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-    p {
-      font-size: 1.05rem;
-      margin: 8px 0;
-      color: #444;
-    }
-    @media (max-width: 800px) {
-      table {
-        max-width: 98vw;
-        font-size: 0.92rem;
-      }
-      th, td {
-        padding: 8px 4px;
-        font-size: 0.92rem;
-      }
-      h2 {
-        font-size: 1.2rem;
-      }
-      p {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
+  body {
+    background-color: #e8ddec;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .header {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e7c4f6;
+    background-color: #ae80c5;
+    box-shadow: 0 0 20px #e2a5fd;
+    border: 2px solid #000;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+  .header h1 {
+    text-align: center;
+    margin: 50px;
+    margin: 0;
+    font-size: 24px;
+  }
+  .header p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  .header b {
+    font-weight: bold;
+  }
+  table {
+    margin-top: 50px;
+    box-shadow: 0 0 20px #e2a5fd;
+    padding: 2px;
+    border: 2px solid black;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  th, td {
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  th {
+    font-size: 17px;
+    color: #e7c4f6;
+    background: #54216c;
+  }
+  td:first-child {
+    color: #e7c4f6;
+    background: #54216c; 
+    font-weight: bold;
+  }
+  td {
+    background-color: #dba0f7c4;
+  }
+  tr:nth-child(even) td:nth-child(odd):not(:first-child),
+  tr:nth-child(odd) td:nth-child(even):not(:first-child) {
+    background-color: #cda4de;
+    color: #000;
+  }
+  .empty {
+    background: #f8cfff !important;
+  }
+  tbody tr td:not(:first-child):hover {
+  background-color: #310d42 !important;
+  color: #e7c4f6 !important;
+  transform: scale(1.05);
+  transition: 0.3s;
+  z-index: 1;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+</style>  
 </head>
 <body>
 
