@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Timetable</title>
+  <style>
+    body {
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      background: #f4f6fb;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    table {
+      width: 100%;
+      max-width: 950px;
+      border-collapse: separate;
+      border-spacing: 0;
+      text-align: center;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      overflow: hidden;
+      margin-top: 32px;
+      border: 1px solid #e3e7ee;
+      animation: fadeIn 0.8s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    th, td {
+      border: 1px solid #e3e7ee;
+      padding: 13px 8px;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    thead th {
+      background: #2d3e50;
+      color: #fff;
+      font-size: 1.08rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: none;
+      box-shadow: none;
+      text-shadow: none;
+    }
+    tbody tr {
+      transition: background 0.2s;
+    }
+    tbody tr:hover {
+      background: #f6faff;
+    }
+    tfoot {
+      background-color: #f0f2f5;
+      font-style: italic;
+    }
+    .highlight {
+      background-color: #eafbe7;
+      font-weight: 600;
+      color: #176c2f;
+      border-radius: 6px;
+      border: 1.5px solid #b2f7b2;
+    }
+    h2 {
+      margin-top: 40px;
+      font-size: 2rem;
+      color: #2d3e50;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 1.05rem;
+      margin: 8px 0;
+      color: #444;
+    }
+    @media (max-width: 800px) {
+      table {
+        max-width: 98vw;
+        font-size: 0.92rem;
+      }
+      th, td {
+        padding: 8px 4px;
+        font-size: 0.92rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>GLA University, Mathura</h2>
+  <p><strong>Institute:</strong> Institute of Engineering & Technology, Computer Engineering & Applications</p>
+  <p><strong>Course:</strong> Bachelor of Technology | <strong>Section:</strong> 2FF | <strong>Semester:</strong> III | <strong>Class Teacher:</strong> Mr. Amit Kumar</p>
+  <p><strong>Session:</strong> 2025–2026 | <strong>w.e.f:</strong> 25 Aug 2025</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Day/Time</th>
+        <th>08:00-09:00</th>
+        <th>09:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th>12:00-01:00</th>
+        <th>01:00-02:00</th>
+        <th>02:00-03:00</th>
+        <th>03:00-04:00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        
+    <td colspan="2">BCSC0801<br>ABVIII-420</td>
+
+    <td colspan="2" >2FF1/BCSC0804<br>ABVIII-5002 <br> 2FF2/BCSC0804<br>ABVIII-5004 <br> 2FF3/BCSC0804<br>ABVIII-5005</td>
+
+    <td ></td>
+    <td  >2FF1/BCSC1010<br>ABVIII-420</td>
+    <td>BCSC1003<br>ABVIII-420</td>
+    <td>BELH0020<br>ABVIII-420</td>
+   
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+    <td colspan="2">BCSC0813<br>ABVIII-420</td>
+    <td colspan="2">2FF2/BCSC0804<br>ABVIII-5004 <br> 2FF2/BCSC0804<br>ABVIII-5004 <br> 2FF2/BCSC0804<br>ABVIII-5004</td>
+    <td></td>
+    <td>BCSC1005<br>ABVIII-420</td>
+    <td >BCSC1003<br>ABVIII-420</td>
+    <td>BELH0020<br>ABVIII-420</td>
+    
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+    <td></td>
+    <td></td>
+    <td>BCSC1002<br>ABVIII-420</td>
+    <td>BCSC1010<br>ABVIII-420</td>
+    <td></td>
+    <td>BCSC1005<br>ABVIII-420</td>
+    <td>BCSE0031<br>ABVIII-420</td>
+    <td>2FF2/BCSC1010<br>ABVIII-420</td>
+    
+      </tr>
+      <tr>
+        <td>Thursday</td>
+    <td>BCSC1002<br>ABVIII-420</td>
+    <td>BCSE0031<br>ABVIII-420</td>
+    <td>PCPH0001<br>ABVIII-420</td>
+    <td> BCSC1005 <br> ABVIII-420</td>
+    <td></td>
+    <td>BCSC1010<br>ABVIII-420</td>
+    <td>BELH0020<br>ABVIII409 <br></td>
+    <td>BCSC1003<br>ABVIII-420</td>
+    
+    
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td></td>
+    <td>BCSE0031<br>ABVIII-420</td>
+    <td>BCSC1002<br>ABVIII-420</td>
+   <td colspan="1">2FF1/BELH0020<br>ABVIII-420 <br> 2FF2/BELH0020<br>ABVIII-404 </td>
+    <td></td>
+    <td >2FF3/BCSC1010<br>ABVIII-420</td>
+    <td>BCSC1010<br>ABVIII-420</td>
+    <td>PCPH0001<br>ABVIII-420</td>
+   
+      </tr>
+      
+    </tbody>
+
+  </table>
+
+</body>
+</html>
