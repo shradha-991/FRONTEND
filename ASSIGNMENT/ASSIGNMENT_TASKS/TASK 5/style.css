@@ -1,0 +1,14 @@
+body{
+    font-family:Arial;
+    padding:20px;
+}
+.btn{
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+#searchBox{
+    padding:8px;
+    width:200px;
+    margin-bottom:10px;
+}
