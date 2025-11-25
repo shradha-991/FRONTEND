@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+input {
+  width: 250px;
+  padding: 8px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.valid {
+  border-color: green;
+}
+.invalid {
+  border-color: red;
+}
+
+button {
+  padding: 10px 18px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
